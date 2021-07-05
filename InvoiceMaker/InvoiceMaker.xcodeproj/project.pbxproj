@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE763FAF266B692300CF2C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FAE266B692300CF2C14 /* AppDelegate.swift */; };
+		CE763FB1266B692300CF2C14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FB0266B692300CF2C14 /* SceneDelegate.swift */; };
+		CE763FB3266B692300CF2C14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FB2266B692300CF2C14 /* ContentView.swift */; };
+		CE763FB5266B692600CF2C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE763FB4266B692600CF2C14 /* Assets.xcassets */; };
+		CE763FB8266B692600CF2C14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE763FB7266B692600CF2C14 /* Preview Assets.xcassets */; };
+		CE763FBB266B692600CF2C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE763FB9266B692600CF2C14 /* LaunchScreen.storyboard */; };
+		CE763FC6266B692600CF2C14 /* InvoiceMakerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FC5266B692600CF2C14 /* InvoiceMakerTests.swift */; };
+		CE763FD1266B692600CF2C14 /* InvoiceMakerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FD0266B692600CF2C14 /* InvoiceMakerUITests.swift */; };
+		CE763FE3266B6A7700CF2C14 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FE2266B6A7700CF2C14 /* HomeScreenView.swift */; };
+		CE763FEC266B6B3300CF2C14 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FEB266B6B3300CF2C14 /* ListCell.swift */; };
+		CE763FF4266B6B7C00CF2C14 /* AddItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FF3266B6B7C00CF2C14 /* AddItemCell.swift */; };
+		CE763FF9266B6BDA00CF2C14 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FF8266B6BDA00CF2C14 /* Wrapper.swift */; };
+		CE763FFE266B6C4B00CF2C14 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE763FFD266B6C4B00CF2C14 /* ViewExtension.swift */; };
+		CE764003266B742500CF2C14 /* OtherBussinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764002266B742500CF2C14 /* OtherBussinessView.swift */; };
+		CE76400B266B782500CF2C14 /* BussinessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76400A266B782500CF2C14 /* BussinessView.swift */; };
+		CE764010266B79A100CF2C14 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76400F266B79A100CF2C14 /* AddItemView.swift */; };
+		CE764016266B7A3900CF2C14 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE764015266B7A3900CF2C14 /* ItemModel.swift */; };
+		CE76401E266BAA7500CF2C14 /* properties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE76401D266BAA7500CF2C14 /* properties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE763FC2266B692600CF2C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE763FA3266B692300CF2C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE763FAA266B692300CF2C14;
+			remoteInfo = InvoiceMaker;
+		};
+		CE763FCD266B692600CF2C14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE763FA3266B692300CF2C14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE763FAA266B692300CF2C14;
+			remoteInfo = InvoiceMaker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE763FAB266B692300CF2C14 /* InvoiceMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE763FAE266B692300CF2C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE763FB0266B692300CF2C14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE763FB2266B692300CF2C14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CE763FB4266B692600CF2C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE763FB7266B692600CF2C14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE763FBA266B692600CF2C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE763FBC266B692600CF2C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE763FC1266B692600CF2C14 /* InvoiceMakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceMakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE763FC5266B692600CF2C14 /* InvoiceMakerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceMakerTests.swift; sourceTree = "<group>"; };
+		CE763FC7266B692600CF2C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE763FCC266B692600CF2C14 /* InvoiceMakerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceMakerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE763FD0266B692600CF2C14 /* InvoiceMakerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceMakerUITests.swift; sourceTree = "<group>"; };
+		CE763FD2266B692600CF2C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE763FE2266B6A7700CF2C14 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		CE763FEB266B6B3300CF2C14 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		CE763FF3266B6B7C00CF2C14 /* AddItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemCell.swift; sourceTree = "<group>"; };
+		CE763FF8266B6BDA00CF2C14 /* Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		CE763FFD266B6C4B00CF2C14 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		CE764002266B742500CF2C14 /* OtherBussinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherBussinessView.swift; sourceTree = "<group>"; };
+		CE76400A266B782500CF2C14 /* BussinessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BussinessView.swift; sourceTree = "<group>"; };
+		CE76400F266B79A100CF2C14 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
+		CE764015266B7A3900CF2C14 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		CE76401D266BAA7500CF2C14 /* properties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = properties.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE763FA8266B692300CF2C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE763FBE266B692600CF2C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE763FC9266B692600CF2C14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE763FA2266B692300CF2C14 = {
+			isa = PBXGroup;
+			children = (
+				CE763FAD266B692300CF2C14 /* InvoiceMaker */,
+				CE763FC4266B692600CF2C14 /* InvoiceMakerTests */,
+				CE763FCF266B692600CF2C14 /* InvoiceMakerUITests */,
+				CE763FAC266B692300CF2C14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE763FAC266B692300CF2C14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE763FAB266B692300CF2C14 /* InvoiceMaker.app */,
+				CE763FC1266B692600CF2C14 /* InvoiceMakerTests.xctest */,
+				CE763FCC266B692600CF2C14 /* InvoiceMakerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE763FAD266B692300CF2C14 /* InvoiceMaker */ = {
+			isa = PBXGroup;
+			children = (
+				CE764014266B7A2C00CF2C14 /* Model */,
+				CE763FEA266B6B2100CF2C14 /* ViewModel */,
+				CE763FE1266B6A5700CF2C14 /* View */,
+				CE763FAE266B692300CF2C14 /* AppDelegate.swift */,
+				CE763FB0266B692300CF2C14 /* SceneDelegate.swift */,
+				CE763FB2266B692300CF2C14 /* ContentView.swift */,
+				CE763FB4266B692600CF2C14 /* Assets.xcassets */,
+				CE763FB9266B692600CF2C14 /* LaunchScreen.storyboard */,
+				CE763FBC266B692600CF2C14 /* Info.plist */,
+				CE763FB6266B692600CF2C14 /* Preview Content */,
+			);
+			path = InvoiceMaker;
+			sourceTree = "<group>";
+		};
+		CE763FB6266B692600CF2C14 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CE763FB7266B692600CF2C14 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE763FC4266B692600CF2C14 /* InvoiceMakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE763FC5266B692600CF2C14 /* InvoiceMakerTests.swift */,
+				CE763FC7266B692600CF2C14 /* Info.plist */,
+			);
+			path = InvoiceMakerTests;
+			sourceTree = "<group>";
+		};
+		CE763FCF266B692600CF2C14 /* InvoiceMakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE763FD0266B692600CF2C14 /* InvoiceMakerUITests.swift */,
+				CE763FD2266B692600CF2C14 /* Info.plist */,
+			);
+			path = InvoiceMakerUITests;
+			sourceTree = "<group>";
+		};
+		CE763FE1266B6A5700CF2C14 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE763FE2266B6A7700CF2C14 /* HomeScreenView.swift */,
+				CE764002266B742500CF2C14 /* OtherBussinessView.swift */,
+				CE76400A266B782500CF2C14 /* BussinessView.swift */,
+				CE76400F266B79A100CF2C14 /* AddItemView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE763FEA266B6B2100CF2C14 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE763FEB266B6B3300CF2C14 /* ListCell.swift */,
+				CE763FF3266B6B7C00CF2C14 /* AddItemCell.swift */,
+				CE763FF8266B6BDA00CF2C14 /* Wrapper.swift */,
+				CE763FFD266B6C4B00CF2C14 /* ViewExtension.swift */,
+				CE76401D266BAA7500CF2C14 /* properties.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE764014266B7A2C00CF2C14 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE764015266B7A3900CF2C14 /* ItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE763FAA266B692300CF2C14 /* InvoiceMaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE763FD5266B692600CF2C14 /* Build configuration list for PBXNativeTarget "InvoiceMaker" */;
+			buildPhases = (
+				CE763FA7266B692300CF2C14 /* Sources */,
+				CE763FA8266B692300CF2C14 /* Frameworks */,
+				CE763FA9266B692300CF2C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InvoiceMaker;
+			productName = InvoiceMaker;
+			productReference = CE763FAB266B692300CF2C14 /* InvoiceMaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE763FC0266B692600CF2C14 /* InvoiceMakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE763FD8266B692600CF2C14 /* Build configuration list for PBXNativeTarget "InvoiceMakerTests" */;
+			buildPhases = (
+				CE763FBD266B692600CF2C14 /* Sources */,
+				CE763FBE266B692600CF2C14 /* Frameworks */,
+				CE763FBF266B692600CF2C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE763FC3266B692600CF2C14 /* PBXTargetDependency */,
+			);
+			name = InvoiceMakerTests;
+			productName = InvoiceMakerTests;
+			productReference = CE763FC1266B692600CF2C14 /* InvoiceMakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE763FCB266B692600CF2C14 /* InvoiceMakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE763FDB266B692600CF2C14 /* Build configuration list for PBXNativeTarget "InvoiceMakerUITests" */;
+			buildPhases = (
+				CE763FC8266B692600CF2C14 /* Sources */,
+				CE763FC9266B692600CF2C14 /* Frameworks */,
+				CE763FCA266B692600CF2C14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE763FCE266B692600CF2C14 /* PBXTargetDependency */,
+			);
+			name = InvoiceMakerUITests;
+			productName = InvoiceMakerUITests;
+			productReference = CE763FCC266B692600CF2C14 /* InvoiceMakerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE763FA3266B692300CF2C14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					CE763FAA266B692300CF2C14 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					CE763FC0266B692600CF2C14 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CE763FAA266B692300CF2C14;
+					};
+					CE763FCB266B692600CF2C14 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = CE763FAA266B692300CF2C14;
+					};
+				};
+			};
+			buildConfigurationList = CE763FA6266B692300CF2C14 /* Build configuration list for PBXProject "InvoiceMaker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE763FA2266B692300CF2C14;
+			productRefGroup = CE763FAC266B692300CF2C14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE763FAA266B692300CF2C14 /* InvoiceMaker */,
+				CE763FC0266B692600CF2C14 /* InvoiceMakerTests */,
+				CE763FCB266B692600CF2C14 /* InvoiceMakerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE763FA9266B692300CF2C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE763FBB266B692600CF2C14 /* LaunchScreen.storyboard in Resources */,
+				CE763FB8266B692600CF2C14 /* Preview Assets.xcassets in Resources */,
+				CE763FB5266B692600CF2C14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE763FBF266B692600CF2C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE763FCA266B692600CF2C14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE763FA7266B692300CF2C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE763FF4266B6B7C00CF2C14 /* AddItemCell.swift in Sources */,
+				CE763FAF266B692300CF2C14 /* AppDelegate.swift in Sources */,
+				CE764003266B742500CF2C14 /* OtherBussinessView.swift in Sources */,
+				CE763FB1266B692300CF2C14 /* SceneDelegate.swift in Sources */,
+				CE763FB3266B692300CF2C14 /* ContentView.swift in Sources */,
+				CE763FF9266B6BDA00CF2C14 /* Wrapper.swift in Sources */,
+				CE764016266B7A3900CF2C14 /* ItemModel.swift in Sources */,
+				CE763FEC266B6B3300CF2C14 /* ListCell.swift in Sources */,
+				CE763FFE266B6C4B00CF2C14 /* ViewExtension.swift in Sources */,
+				CE76401E266BAA7500CF2C14 /* properties.swift in Sources */,
+				CE764010266B79A100CF2C14 /* AddItemView.swift in Sources */,
+				CE76400B266B782500CF2C14 /* BussinessView.swift in Sources */,
+				CE763FE3266B6A7700CF2C14 /* HomeScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE763FBD266B692600CF2C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE763FC6266B692600CF2C14 /* InvoiceMakerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE763FC8266B692600CF2C14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE763FD1266B692600CF2C14 /* InvoiceMakerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE763FC3266B692600CF2C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE763FAA266B692300CF2C14 /* InvoiceMaker */;
+			targetProxy = CE763FC2266B692600CF2C14 /* PBXContainerItemProxy */;
+		};
+		CE763FCE266B692600CF2C14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE763FAA266B692300CF2C14 /* InvoiceMaker */;
+			targetProxy = CE763FCD266B692600CF2C14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE763FB9266B692600CF2C14 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE763FBA266B692600CF2C14 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE763FD3266B692600CF2C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE763FD4266B692600CF2C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE763FD6266B692600CF2C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = C33ES753XY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InvoiceMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GaGan.InvoiceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE763FD7266B692600CF2C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"InvoiceMaker/Preview Content\"";
+				DEVELOPMENT_TEAM = C33ES753XY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = InvoiceMaker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GaGan.InvoiceMaker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE763FD9266B692600CF2C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = InvoiceMakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GaGan.InvoiceMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceMaker.app/InvoiceMaker";
+			};
+			name = Debug;
+		};
+		CE763FDA266B692600CF2C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = InvoiceMakerTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GaGan.InvoiceMakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/InvoiceMaker.app/InvoiceMaker";
+			};
+			name = Release;
+		};
+		CE763FDC266B692600CF2C14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = InvoiceMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GaGan.InvoiceMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InvoiceMaker;
+			};
+			name = Debug;
+		};
+		CE763FDD266B692600CF2C14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C33ES753XY;
+				INFOPLIST_FILE = InvoiceMakerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GaGan.InvoiceMakerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = InvoiceMaker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE763FA6266B692300CF2C14 /* Build configuration list for PBXProject "InvoiceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE763FD3266B692600CF2C14 /* Debug */,
+				CE763FD4266B692600CF2C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE763FD5266B692600CF2C14 /* Build configuration list for PBXNativeTarget "InvoiceMaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE763FD6266B692600CF2C14 /* Debug */,
+				CE763FD7266B692600CF2C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE763FD8266B692600CF2C14 /* Build configuration list for PBXNativeTarget "InvoiceMakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE763FD9266B692600CF2C14 /* Debug */,
+				CE763FDA266B692600CF2C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE763FDB266B692600CF2C14 /* Build configuration list for PBXNativeTarget "InvoiceMakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE763FDC266B692600CF2C14 /* Debug */,
+				CE763FDD266B692600CF2C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE763FA3266B692300CF2C14 /* Project object */;
+}
